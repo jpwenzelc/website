@@ -1,19 +1,27 @@
 import Typography from "typography"
-import kirkhamTheme from "typography-theme-kirkham"
 
-kirkhamTheme.overrideThemeStyles = () => {
-  return {
-    "a.gatsby-resp-image-link": {
-      boxShadow: `none`,
+const typography = new Typography({
+  googleFonts: [
+    {
+      name: 'Poppins',
+      styles: [
+        '700',
+      ],
     },
-  }
-}
+    {
+      name: 'PT Serif',
+      styles: [
+        '400',
+        '700',
+      ],
+    },
+  ],
+  baseFontSize: '18px',
+  baseLineHeight: 1.66,
+  headerFontFamily: ["Poppins", 'sans-serif'],
+  bodyFontFamily: ["PT Serif", "serif"]
+})
 
-delete kirkhamTheme.googleFonts
-
-const typography = new Typography(kirkhamTheme)
-
-// Hot reload typography in development.
 if (process.env.NODE_ENV !== `production`) {
   typography.injectStyles()
 }

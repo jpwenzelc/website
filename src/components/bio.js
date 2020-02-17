@@ -53,13 +53,15 @@ const Bio = () => {
           borderRadius: `50%`,
         }}
       />
-      <p>
-        Written by <strong>{author}</strong> who lives and works in San
-        Francisco building useful things.
+      <p style={{
+        fontSize: rhythm(.467)
+      }}>
+        My name is <strong>{author}</strong>, I'm a software developer based in
+        London. you can find me in
         {` `}
         <a href={`https://twitter.com/${social.twitter}`}>
-          You should follow him on Twitter
-        </a>
+          Twitter
+        </a> if you want to chat.
       </p>
     </div>
   )
