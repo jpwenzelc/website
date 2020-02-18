@@ -4,11 +4,7 @@ const typography = new Typography({
   googleFonts: [
     {
       name: "Karla",
-      styles: ["700"],
-    },
-    {
-      name: "Karla",
-      styles: ["400", "700"],
+      styles: ["400","700"],
     },
   ],
   baseFontSize: "18px",
