@@ -1,7 +1,8 @@
 import React from "react"
 import { Link } from "gatsby"
 import Toggle from "../components/toggle"
-import { faMoon, faSun } from "@fortawesome/free-solid-svg-icons"
+import moon from "../resources/moon.svg"
+import sun from "../resources/sun.svg"
 
 import { rhythm, scale } from "../utils/typography"
 
@@ -63,7 +64,7 @@ class Layout extends React.Component {
             icons={{
               checked: (
                 <img
-                  src={faMoon}
+                  src={moon}
                   width="16"
                   height="16"
                   role="presentation"
@@ -72,7 +73,7 @@ class Layout extends React.Component {
               ),
               unchecked: (
                 <img
-                  src={faSun}
+                  src={sun}
                   width="16"
                   height="16"
                   role="presentation"

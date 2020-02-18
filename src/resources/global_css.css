@@ -1,18 +1,21 @@
 body {
     background-color: #fff7ea;
-    transition: all ease .2s;
+    transition: background-color ease .2s;
 }
 
 h2 {
     color: #fe6337;
+    transition: all ease .2s;
 }
 
 a {
     color: #fe6337;
+    transition: all ease .2s;
 }
 
 .underscore {
     color: #fe6337;
+    transition: all ease .2s;
 }
 
 body.dark {
