@@ -6,10 +6,24 @@
  */
 
 import React from "react"
-import { useStaticQuery, graphql } from "gatsby"
+import { graphql, useStaticQuery } from "gatsby"
 import Image from "gatsby-image"
+import styled from "styled-components"
 
 import { rhythm } from "../utils/typography"
+
+const BioContainer = styled(<div
+  style={{
+    display: `flex`,
+    marginBottom: rhythm(2.5),
+  }}
+/>)
+
+const BioDescription = styled(<p
+  style={{
+    fontSize: rhythm(0.467),
+  }}
+/>)
 
 const Bio = () => {
   const data = useStaticQuery(graphql`
@@ -34,12 +48,7 @@ const Bio = () => {
 
   const { author, social } = data.site.siteMetadata
   return (
-    <div
-      style={{
-        display: `flex`,
-        marginBottom: rhythm(2.5),
-      }}
-    >
+    <BioContainer>
       <Image
         fixed={data.avatar.childImageSharp.fixed}
         alt={author}
@@ -53,7 +62,7 @@ const Bio = () => {
           borderRadius: `50%`,
         }}
       />
-      <p
+      <BioDescription
         style={{
           fontSize: rhythm(0.467),
         }}
@@ -63,8 +72,8 @@ const Bio = () => {
         {` `}
         <a href={`https://twitter.com/${social.twitter}`}>Twitter</a> if you
         want to chat.
-      </p>
-    </div>
+      </BioDescription>
+    </BioContainer>
   )
 }
 

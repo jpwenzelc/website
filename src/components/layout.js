@@ -1,42 +1,44 @@
 import React from "react"
 import { Link } from "gatsby"
+import styled from "styled-components"
 
 import { rhythm, scale } from "../utils/typography"
 
-const Layout = ({ title, children }) => {
-  let header
-
-  header = (
-    <h1
+const Header = styled(
+  <h1
+    style={{
+      ...scale(1.5),
+      marginBottom: rhythm(1.5),
+      marginTop: 0,
+    }}
+  >
+    <Link
       style={{
-        ...scale(1.5),
-        marginBottom: rhythm(1.5),
-        marginTop: 0,
+        boxShadow: `none`,
+        textDecoration: `none`,
+        color: `inherit`,
       }}
+      to={`/`}
     >
-      <Link
-        style={{
-          boxShadow: `none`,
-          textDecoration: `none`,
-          color: `inherit`,
-        }}
-        to={`/`}
-      >
-        {title}
-      </Link>
-    </h1>
-  )
+      {title}
+    </Link>
+  </h1>
+)
+
+const Container = styled(<div
+  style={{
+    marginLeft: `auto`,
+    marginRight: `auto`,
+    maxWidth: rhythm(24),
+    padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
+  }}
+/>)
+
+const Layout = ({ children }) => {
 
   return (
-    <div
-      style={{
-        marginLeft: `auto`,
-        marginRight: `auto`,
-        maxWidth: rhythm(24),
-        padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
-      }}
-    >
-      <header>{header}</header>
+    <Container>
+      <Header/>
       <main>{children}</main>
       <footer
         style={{
@@ -59,7 +61,7 @@ const Layout = ({ title, children }) => {
           Starter Blog
         </a>
       </footer>
-    </div>
+    </Container>
   )
 }
 
