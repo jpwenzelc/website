@@ -1,5 +1,6 @@
 body {
     background-color: #fff7ea;
+    transition: all ease .2s;
 }
 
 h2 {
@@ -8,4 +9,25 @@ h2 {
 
 a {
     color: #fe6337;
+}
+
+.underscore {
+    color: #fe6337;
+}
+
+body.dark {
+    background-color: #505050;
+    color: #ffffff;
+}
+
+body.dark h2 {
+    color: #46fff7;
+}
+
+body.dark a {
+    color: #46fff7;
+}
+
+body.dark .underscore {
+    color: #46fff7;
 }

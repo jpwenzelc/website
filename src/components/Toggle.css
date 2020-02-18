@@ -102,3 +102,11 @@
 .react-toggle:active .react-toggle-thumb {
     box-shadow: 0px 0px 5px 5px rgb(254, 99, 55);
 }
+
+body.dark .react-toggle--focus .react-toggle-thumb {
+    box-shadow: 0px 0px 2px 3px rgb(70, 255, 247);
+}
+
+body.dark .react-toggle:active .react-toggle-thumb {
+    box-shadow: 0px 0px 5px 5px rgb(70, 255, 247);
+}

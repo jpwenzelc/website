@@ -39,9 +39,7 @@ class Layout extends React.Component {
           to={`/`}
         >
           {title}
-          <span style={{
-            color: "#fe6337",
-          }}>_</span>
+          <span className={"underscore"}>_</span>
         </Link>
       </h1>
     )
