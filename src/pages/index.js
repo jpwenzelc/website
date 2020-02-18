@@ -5,17 +5,6 @@ import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { rhythm } from "../utils/typography"
-import styled from "styled-components"
-
-const TitleHeader = styled(<h3
-  style={{
-    marginBottom: rhythm(1 / 4),
-  }}>
-</h3>)
-
-const CreationDate = styled(<small/>)
-
-const PostPreview = styled(<p/>)
 
 const BlogIndex = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata.title
@@ -30,15 +19,18 @@ const BlogIndex = ({ data, location }) => {
         return (
           <article key={node.fields.slug}>
             <header>
-              <TitleHeader>
+              <h3
+                style={{
+                  marginBottom: rhythm(1 / 4),
+                }}>
                 <Link style={{ boxShadow: `none` }} to={node.fields.slug}>
                   {title}
                 </Link>
-              </TitleHeader>
-              <CreationDate>{node.frontmatter.date}</CreationDate>
+              </h3>
+              <small>{node.frontmatter.date}</small>
             </header>
             <section>
-              <PostPreview
+              <p
                 dangerouslySetInnerHTML={{
                   __html: node.frontmatter.description || node.excerpt,
                 }}
