@@ -1,8 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `El Artesano`,
-    preTitle: `El`,
-    postTitle: `Artesano_`,
+    title: `El Artesano_`,
     author: `José Pablo Wenzel`,
     description: `A blog where I share my knowledge and thoughts through my dev journey`,
     siteUrl: `https://gatsby-starter-blog-demo.netlify.com/`,

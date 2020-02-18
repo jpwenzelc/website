@@ -53,15 +53,16 @@ const Bio = () => {
           borderRadius: `50%`,
         }}
       />
-      <p style={{
-        fontSize: rhythm(.467)
-      }}>
+      <p
+        style={{
+          fontSize: rhythm(0.467),
+        }}
+      >
         My name is <strong>{author}</strong>, I'm a software developer based in
         London. you can find me in
         {` `}
-        <a href={`https://twitter.com/${social.twitter}`}>
-          Twitter
-        </a> if you want to chat.
+        <a href={`https://twitter.com/${social.twitter}`}>Twitter</a> if you
+        want to chat.
       </p>
     </div>
   )

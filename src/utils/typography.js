@@ -3,23 +3,18 @@ import Typography from "typography"
 const typography = new Typography({
   googleFonts: [
     {
-      name: 'Poppins',
-      styles: [
-        '700',
-      ],
+      name: "Karla",
+      styles: ["700"],
     },
     {
-      name: 'PT Serif',
-      styles: [
-        '400',
-        '700',
-      ],
+      name: "Karla",
+      styles: ["400", "700"],
     },
   ],
-  baseFontSize: '18px',
+  baseFontSize: "18px",
   baseLineHeight: 1.66,
-  headerFontFamily: ["Poppins", 'sans-serif'],
-  bodyFontFamily: ["PT Serif", "serif"]
+  headerFontFamily: ["Karla", "sans-serif"],
+  bodyFontFamily: ["karla", "sans-serif"],
 })
 
 if (process.env.NODE_ENV !== `production`) {
