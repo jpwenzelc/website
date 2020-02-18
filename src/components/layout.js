@@ -24,6 +24,9 @@ const Layout = ({ location, title, children }) => {
         to={`/`}
       >
         {title}
+        <span style={{
+          color: '#fe6337'
+        }}>_</span>
       </Link>
     </h1>
   )
@@ -41,7 +44,7 @@ const Layout = ({ location, title, children }) => {
       <main>{children}</main>
       <footer style={{
         ...scale(-.5),
-        textAlign: `center`
+        textAlign: `center`,
       }}>
         © {new Date().getFullYear()}, Built with
         {` `}

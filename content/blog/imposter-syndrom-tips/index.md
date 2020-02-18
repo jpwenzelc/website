@@ -4,7 +4,7 @@ date: "2020-02-17T19:03:03.284Z"
 description: "This are some advices that I have compile in my research of not feeling like an imposter in my workspace"
 ---
 
-## How to go through life without feeling like an imposter
+### How to go through life without feeling like an imposter
 
 I have heard more than once from colleagues, that during their career it is easy to feel like an imposter. For me, it was
 a rude inner voice telling me: "You don't deserve to be here, these people are very smart." The imposter syndrome is a 

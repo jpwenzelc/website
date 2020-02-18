@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `El Artesano_`,
+    title: `El Artesano`,
     author: `José Pablo Wenzel`,
     description: `A blog where I share my knowledge and thoughts through my dev journey`,
     siteUrl: `https://gatsby-starter-blog-demo.netlify.com/`,
@@ -60,8 +60,8 @@ module.exports = {
         name: `Gatsby Starter Blog`,
         short_name: `GatsbyJS`,
         start_url: `/`,
-        background_color: `#ffffff`,
-        theme_color: `#663399`,
+        background_color: `#fff7ea`,
+        theme_color: `#fe6337`,
         display: `minimal-ui`,
         icon: `content/assets/gatsby-icon.png`,
       },
