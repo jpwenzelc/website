@@ -20,9 +20,7 @@ class Layout extends React.Component {
   }
 
   renderHeader() {
-    let { location, title } = this.props
-    const rootPath = `${__PATH_PREFIX__}/`
-
+    let { title } = this.props
     return (
       <h1
         style={{
@@ -64,6 +62,7 @@ class Layout extends React.Component {
             icons={{
               checked: (
                 <img
+                  alt={"moon"}
                   src={moon}
                   width="16"
                   height="16"
@@ -73,6 +72,7 @@ class Layout extends React.Component {
               ),
               unchecked: (
                 <img
+                  alt={"sun"}
                   src={sun}
                   width="16"
                   height="16"

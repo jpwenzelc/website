@@ -168,6 +168,7 @@ export default class Toggle extends PureComponent {
         onTouchMove={this.handleTouchMove}
         onTouchEnd={this.handleTouchEnd}
         onTouchCancel={this.handleTouchCancel}
+        role={"none"}
       >
         <div className="react-toggle-track">
           <div className="react-toggle-track-check">
