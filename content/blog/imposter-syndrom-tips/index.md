@@ -1,4 +1,3 @@
-
 ---
 title: Get over the imposter syndrome
 date: "2020-02-17T19:03:03.284Z"
