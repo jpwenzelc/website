@@ -98,11 +98,11 @@ class Layout extends React.Component {
         }}>
           © {new Date().getFullYear()}, Built with
           {` `}
-          <a href="https://www.gatsbyjs.org" target={`_blank`}>Gatsby.</a>
+          <a href="https://www.gatsbyjs.org" rel="noopener" rel="noreferrer"target={`_blank`}>Gatsby.</a>
           {` `}
           using the
           {` `}
-          <a href="https://www.gatsbyjs.org/starters/gatsbyjs/gatsby-starter-blog/" target={`_blank`}>Starter Blog</a>
+          <a href="https://www.gatsbyjs.org/starters/gatsbyjs/gatsby-starter-blog/" rel="noopener" rel="noreferrer" target={`_blank`}>Starter Blog</a>
         </footer>
       </div>
     )
